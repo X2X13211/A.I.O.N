@@ -1,0 +1,80 @@
+site_name: A.I.O.N
+
+
+theme:
+  name: material
+  language: ru
+  logo: image/image.png
+  favicon: image/favicon.ico
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  icon:
+    repo: fontawesome/brands/github
+
+  # Оставляем только одну темную палитру
+  palette:
+    scheme: slate
+    primary: black
+    accent: indigo
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - header.autohide
+    - navigation.top
+    - toc.follow
+    - toc.integrate
+    - content.code.annotate
+    - content.tooltips
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/X2X13211
+      name: Мой GitHub
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/твой-канал
+      name: Наш Telegram
+
+plugins:
+  - search:
+      lang: ru
+      separator: '[\s\-\.]+'
+      suggestion: true
+      highlight: true
+  - roamlinks
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+nav:
+  - "Главная": index.md
+  - "История зарождения ИИ":
+      - "Миф о Пандемосе": "История зарождения ИИ/The-Myth-of-the-Fiery-Mind.md"
+      - "Фрэнсис Бэкон: Новый органон": "История зарождения ИИ/The-Inductive-Machine-and-ML-Prototype.md"
+      - "Машина Паскаля": "История зарождения ИИ/Pascal's-adding-machine.md"
+      - "Счетная машина Лейбница": "История зарождения ИИ/Calculating-machine.md"
+      - "Механический турок": "История зарождения ИИ/mechanical-turok.md"

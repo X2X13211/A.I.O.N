@@ -1,0 +1,146 @@
+body {
+    background-color: #0a0a0a !important;
+    background-image:
+        radial-gradient(at 0% 0%, rgba(45, 26, 114, 0.3) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(13, 62, 110, 0.3) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(20, 20, 20, 0.5) 0px, transparent 50%),
+        url("https://www.transparenttextures.com/patterns/carbon-fibre.png") !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+:root {
+    --glass-surface: rgba(25, 25, 25, 0.4);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-blur: 30px;
+    --md-primary-fg-color: transparent !important;
+}
+
+.md-header {
+    background-color: rgba(20, 20, 20, 0.3) !important;
+    backdrop-filter: blur(var(--glass-blur)) saturate(150%) !important;
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(150%) !important;
+    border-bottom: 1px solid var(--glass-border) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.md-nav__link {
+    border-radius: 6px;
+    margin: 3px 10px !important;
+    transition: 0.2s all ease-in-out;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.md-nav__link:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.03) !important;
+}
+
+.md-nav__link--active {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: #fff !important;
+    font-weight: 600;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05) !important;
+}
+
+.md-nav__title {
+    color: var(--md-accent-fg-color) !important;
+    padding: 20px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.5px;
+}
+.md-content {
+    background: var(--glass-surface) !important;
+    backdrop-filter: blur(var(--glass-blur)) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(180%) !important;
+    border-radius: 12px !important;
+    border: none !important;
+    box-shadow:
+        0 25px 50px -12px rgba(0, 0, 0, 0.7),
+        0 0 30px rgba(255, 255, 255, 0.03) !important;
+}
+
+.md-search__form {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid var(--glass-border) !important;
+    backdrop-filter: blur(15px);
+    border-radius: 8px !important;
+}
+.md-top {
+    background-color: rgba(40, 40, 40, 0.4) !important;
+    backdrop-filter: blur(15px) !important;
+    border-radius: 8px !important;
+    border: none !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.04) !important;
+}
+
+.md-top:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.06) !important;
+}
+.admonition, .highlight {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-radius: 8px !important;
+    border: none !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.02) !important;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 5px solid transparent;
+    background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+.md-nav__link:active,
+.md-nav__link:active::before,
+.md-nav__link:active::after {
+    transform: none !important;
+    background: none !important;
+    animation: none !important;
+}
+
+@keyframes glass-shine {
+}
+
+.md-sidebar--primary {
+    padding-left: 10px !important;
+}
+
+.md-nav__list {
+    padding-left: 4px !important;
+}
+
+.md-nav__link span, .md-nav__link {
+    display: flex;
+    align-items: center;
+    padding-left: 12px !important;
+}
+
+.md-nav__item .md-nav__list {
+    margin-left: 15px !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.md-nav__title {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.md-nav__item {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.md-nav, .md-sidebar {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.md-nav__item--active > .md-nav__link {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.04) !important;
+}
